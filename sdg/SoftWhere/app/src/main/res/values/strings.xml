@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">SoftWhere</string>
+    <string name="programming_languages">Programming Languages</string>
+    <string name="info">Info</string>
+    <string name="various_occupations">Various Jobs</string>
+    <string name="my_developer">Developed by Sagar Singh</string>
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
 </resources>

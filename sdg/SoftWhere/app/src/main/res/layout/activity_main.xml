@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentHome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/parentHome">
+    android:background="@color/VeryLightGreyBackground"
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -58,18 +59,168 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewHomePL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgLogo" >
+                app:layout_constraintTop_toBottomOf="@+id/imgLogo">
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                    <ImageView
+                        android:id="@+id/imgHomePL"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@mipmap/ic_solid_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewHomePL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:text="@string/programming_languages"
+                        android:textColor="@color/BlackText"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgHomePL"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgHomePL"
+                        app:layout_constraintTop_toTopOf="@+id/imgHomePL" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewHomeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewHomePL">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgHomeInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@mipmap/ic_solid_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewHomeInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:text="@string/info"
+                        android:textColor="#282828"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgHomeInfo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgHomeInfo"
+                        app:layout_constraintTop_toTopOf="@+id/imgHomeInfo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewHomeJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="40dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewHomeInfo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgHomeJobs"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@mipmap/ic_solid_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewHomeJobs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:text="@string/various_occupations"
+                        android:textColor="#282828"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgHomeJobs"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgHomeJobs"
+                        app:layout_constraintTop_toTopOf="@+id/imgHomeJobs" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewDeveloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="25dp"
+                android:text="@string/my_developer"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewHomeJobs" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
