@@ -5,14 +5,14 @@ public class Infos {
     private int id;
     private String title;
     private String description;
-    private String contains;
+    private String contents;
     private String imageURL;
 
-    public Infos(int id, String title, String description, String contains, String imageURL) {
+    public Infos(int id, String title, String description, String contents, String imageURL) {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.contains = contains;
+        this.contents = contents;
         this.imageURL = imageURL;
     }
 
@@ -40,12 +40,12 @@ public class Infos {
         this.description = description;
     }
 
-    public String getContains() {
-        return contains;
+    public String getContents() {
+        return contents;
     }
 
-    public void setContains(String contains) {
-        this.contains = contains;
+    public void setContents(String contains) {
+        this.contents = contains;
     }
 
     public String getImageURL() {
@@ -62,7 +62,7 @@ public class Infos {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
-                ", contains='" + contains + '\'' +
+                ", contains='" + contents + '\'' +
                 ", imageURL='" + imageURL + '\'' +
                 '}';
     }

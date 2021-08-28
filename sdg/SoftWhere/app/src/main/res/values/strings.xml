@@ -4,8 +4,8 @@
     <string name="info">Info</string>
     <string name="various_occupations">Various Jobs</string>
     <string name="my_developer">Developed by Sagar Singh</string>
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
+    <string name="description">Description:</string>
+    <string name="contents">Contents:</string>
     <!--    <string name=""></string>-->
     <!--    <string name=""></string>-->
     <!--    <string name=""></string>-->

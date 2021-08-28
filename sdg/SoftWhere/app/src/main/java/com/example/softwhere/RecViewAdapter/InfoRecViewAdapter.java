@@ -1,6 +1,7 @@
 package com.example.softwhere.RecViewAdapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,18 +15,23 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.softwhere.Asorted.Infos;
+import com.example.softwhere.InnerViews.InfoDetailsActivity;
 import com.example.softwhere.R;
 
 import java.util.ArrayList;
+
+import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_CONTENTS_KEY;
+import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_DESCRIPTION_KEY;
+import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_TITLE_KEY;
 
 
 public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.ViewHolder> {
 
     private ArrayList<Infos> infos = new ArrayList<>();
-    private Context context;
+    private Context mContext;
 
     public InfoRecViewAdapter(Context context) {
-        this.context = context;
+        this.mContext = context;
     }
 
     @NonNull
@@ -43,11 +49,16 @@ public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.
         holder.parentCardViewInfoItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, info.getTitle() + " is clicked", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context, info.getTitle() + " is clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mContext, InfoDetailsActivity.class);
+                intent.putExtra(INFO_DETAIL_TITLE_KEY, info.getTitle());
+                intent.putExtra(INFO_DETAIL_DESCRIPTION_KEY, info.getDescription());
+                intent.putExtra(INFO_DETAIL_CONTENTS_KEY, info.getContents());
+                mContext.startActivity(intent);
             }
         });
 
-        Glide.with(context)
+        Glide.with(mContext)
                 .asBitmap()
                 .load(info.getImageURL())
                 .into(holder.imgCardInfo);

@@ -9,4 +9,8 @@
     <color name="DarkGreyBackground">#A5A5A5</color>
     <color name="LightBlueBackground">#81D6DB</color>
     <color name="DarkBlueBackground">#2D46B9</color>
+    <color name="DescriptionTextBlack">#484848</color>
+<!--    <color name=""></color>-->
+<!--    <color name=""></color>-->
+<!--    <color name=""></color>-->
 </resources>
