@@ -4,13 +4,14 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="BlackText">#282828</color>
+    <color name="GreyText">#4F4F4F</color>
     <color name="VeryLightGreyBackground">#F5F5F5</color>
     <color name="LightGreyBackground">#E5E5E5</color>
     <color name="DarkGreyBackground">#A5A5A5</color>
     <color name="LightBlueBackground">#81D6DB</color>
     <color name="DarkBlueBackground">#2D46B9</color>
     <color name="DescriptionTextBlack">#484848</color>
-<!--    <color name=""></color>-->
+    <color name="DarkGreenBackground">#055052</color>
 <!--    <color name=""></color>-->
 <!--    <color name=""></color>-->
 </resources>

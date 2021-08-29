@@ -6,13 +6,13 @@
     <string name="my_developer">Developed by Sagar Singh</string>
     <string name="description">Description:</string>
     <string name="contents">Contents:</string>
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
-    <!--    <string name=""></string>-->
+    <string name="no_jobs">No Jobs Available</string>
+    <string name="no_languages">No Languages Available</string>
+    <string name="salary">Salary:</string>
+    <string name="job_description">Job Description:</string>
+    <string name="skills_involved">Skills Involved:</string>
+    <string name="link">Link:</string>
+    <string name="visit">Visit The Website</string>
+    <string name="job_title">Job Title</string>
+    <!-- <string name=""></string>-->
 </resources>

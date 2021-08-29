@@ -25,7 +25,7 @@ import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_D
 import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_TITLE_KEY;
 
 
-public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.ViewHolder> {
+public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.InfoViewHolder> {
 
     private ArrayList<Infos> infos = new ArrayList<>();
     private Context mContext;
@@ -36,13 +36,13 @@ public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public InfoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_info, parent, false);
-        return new ViewHolder(view);
+        return new InfoViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull InfoViewHolder holder, final int position) {
         final Infos info = infos.get(position);
         holder.textViewInfoCardTitle.setText(info.getTitle());
 
@@ -74,13 +74,13 @@ public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.
         notifyDataSetChanged();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class InfoViewHolder extends RecyclerView.ViewHolder {
 
         private CardView parentCardViewInfoItem;
         private ImageView imgCardInfo;
         private TextView textViewInfoCardTitle;
 
-        public ViewHolder(@NonNull View itemView) {
+        public InfoViewHolder(@NonNull View itemView) {
             super(itemView);
 
             parentCardViewInfoItem = itemView.findViewById(R.id.parentCardViewInfoItem);

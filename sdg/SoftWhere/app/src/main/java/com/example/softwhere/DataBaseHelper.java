@@ -108,6 +108,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 JOB_COLUMN_IMAGE_URL +
                 " FROM " + JOB_DETAILS_TABLE + ";";
 
+//        String queryString = "SELECT * FROM " + JOB_DETAILS_TABLE + ";";
+
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(queryString, null);
 
@@ -144,9 +146,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             int jobId = cursor.getInt(0);
             String title = cursor.getString(1);
             String description = cursor.getString(2);
-            String skills = cursor.getString(3);
-            String link = cursor.getString(4);
-            String salary = cursor.getString(5);
+            String salary = cursor.getString(3);
+            String skills = cursor.getString(4);
+            String link = cursor.getString(5);
             String imageURL = cursor.getString(6);
 
             job = new Jobs(jobId, title, description, skills, link, salary, imageURL);
