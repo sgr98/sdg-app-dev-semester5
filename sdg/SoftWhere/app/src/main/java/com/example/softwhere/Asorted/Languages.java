@@ -5,14 +5,14 @@ public class Languages {
     private int id;
     private String title;
     private String type;
-    private String Description;
+    private String description;
     private String status;
 
     public Languages(int id, String title, String type, String description, String status) {
         this.id = id;
         this.title = title;
         this.type = type;
-        Description = description;
+        this.description = description;
         this.status = status;
     }
 
@@ -41,11 +41,11 @@ public class Languages {
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public String getStatus() {
@@ -62,7 +62,7 @@ public class Languages {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", type='" + type + '\'' +
-                ", Description='" + Description + '\'' +
+                ", description='" + description + '\'' +
                 ", status='" + status + '\'' +
                 '}';
     }
