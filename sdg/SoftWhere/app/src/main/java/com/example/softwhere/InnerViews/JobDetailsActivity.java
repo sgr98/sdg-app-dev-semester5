@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,12 +36,17 @@ public class JobDetailsActivity extends AppCompatActivity {
             DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
             Jobs job = dataBaseHelper.getJobById(id);
 
-            Toast.makeText(this, "Skills:\n" + job.getSkills(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Skills:\n" + job.getSkills(), Toast.LENGTH_SHORT).show();
 
             textViewJobDetailMainTitle.setText(job.getTitle());
             textViewJobDetailDescription.setText(job.getDescription());
             textViewJobDetailsSkills.setText(job.getSkills());
-            textViewJobDetailLink.setText(job.getLink());
+
+            textViewJobDetailLink.setClickable(true);
+            textViewJobDetailLink.setMovementMethod(LinkMovementMethod.getInstance());
+            String linkText = "<a href='" + job.getLink() + "'> Visit Here </a>";
+            textViewJobDetailLink.setText(Html.fromHtml(linkText, Html.FROM_HTML_MODE_COMPACT));
+
             textViewJobDetailSalary.setText(job.getSalary());
 
             Glide.with(this)

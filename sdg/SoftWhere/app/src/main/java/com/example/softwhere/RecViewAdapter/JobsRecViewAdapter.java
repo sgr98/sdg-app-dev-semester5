@@ -53,9 +53,9 @@ public class JobsRecViewAdapter extends RecyclerView.Adapter<JobsRecViewAdapter.
             public void onClick(View v) {
 //                Toast.makeText(mContext,"Card Id: " + shortJob.getId(), Toast.LENGTH_SHORT).show();
 
-//                Intent intent = new Intent(mContext, JobDetailsActivity.class);
-//                intent.putExtra(JobDetailId, shortJob.getId());
-//                mContext.startActivity(intent);
+                Intent intent = new Intent(mContext, JobDetailsActivity.class);
+                intent.putExtra(JobDetailId, shortJob.getId());
+                mContext.startActivity(intent);
 
 //                DataBaseHelper dataBaseHelper = new DataBaseHelper(mContext);
 //                if(dataBaseHelper.deleteOneJob(shortJob.getId())) {
