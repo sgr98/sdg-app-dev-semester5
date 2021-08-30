@@ -232,13 +232,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 String description = cursor.getString(3);
                 String status = cursor.getString(4);
 
-                String color = "#000000";
-                if(status == "UNSEEN")
-                    color = "#F7F6F2";
-                else if(status == "START")
-                    color = "#FFF7AE";
-                else if(status == "COMPLETED")
-                    color = "#80ED99";
+//                String color = "#000000";
+//                if(status == "UNSEEN")
+//                    color = "#F7F6F2";
+//                else if(status == "START")
+//                    color = "#FFF7AE";
+//                else if(status == "COMPLETED")
+//                    color = "#80ED99";
 
                 languages.add(new Languages(id, title, type, description, status));
             } while(cursor.moveToNext());

@@ -31,6 +31,8 @@ public class LanguageActivity extends AppCompatActivity {
     private EditText editTextLanguageSearch;
     private Button btnLanguageFilter;
 
+    private String search = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,21 +55,18 @@ public class LanguageActivity extends AppCompatActivity {
         btnLanguageFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String search = editTextLanguageSearch.getText().toString();
-//                String status = getSpinnerText();
-//                if(status == "All")
-//                    status = "";
+                search = editTextLanguageSearch.getText().toString();
                 initialiseAdapterAndActivity(search, "");
             }
         });
-    }
 
-//    private String getSpinnerText() {
-//        final String[] mainStatus = {""};
 //        spinnerLanguage.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 //            @Override
 //            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                mainStatus[0] = spinnerLanguage.getSelectedItem().toString();
+//                String status = spinnerLanguage.getSelectedItem().toString();
+//                if(status == "All")
+//                    status = "";
+//                initialiseAdapterAndActivity(search, status);
 //            }
 //
 //            @Override
@@ -75,9 +74,7 @@ public class LanguageActivity extends AppCompatActivity {
 //
 //            }
 //        });
-//
-//        return mainStatus[0];
-//    }
+    }
 
     private void initialiseAdapterAndActivity(String search, String status) {
         ArrayList<Languages> languages = new ArrayList<>();
