@@ -27,7 +27,6 @@ public class JobsActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerViewJobs);
         tvNoJobs = findViewById(R.id.tvNoJobs);
-
         tvNoJobs.setVisibility(View.GONE);
 
         ArrayList<ShortJob> shortJobs = new ArrayList<>();

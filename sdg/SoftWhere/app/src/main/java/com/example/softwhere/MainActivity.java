@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.softwhere.Asorted.Jobs;
+import com.example.softwhere.Asorted.Languages;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         cardViewHomePL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, LanguageActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -146,6 +148,129 @@ public class MainActivity extends AppCompatActivity {
                     "https://www.indeed.com/career-advice/finding-a-job/types-of-software-engineer",
                     "$123,060 per year",
                     "https://resources.workable.com/wp-content/uploads/2017/02/how-to-post-jobs-indeed-featured.png"
+            ));
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // =========================================================================================
+        // =========================================================================================
+        // =========================================================================================
+
+        // 1
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "Java",
+                    "Imperative, Object-Oriented, Functional",
+                    "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+                    "UNSEEN"
+            ));
+            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // 2
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "XML",
+                    "Markup",
+                    "Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. The World Wide Web Consortium's XML 1.0 Specification of 1998 and several other related specifications—all of them free open standards—define XML.",
+                    "UNSEEN"
+            ));
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // 3
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "SQL",
+                    "Declarative",
+                    "SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system.",
+                    "UNSEEN"
+            ));
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // 4
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "JSON",
+                    "Object-Notation",
+                    "JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays.",
+                    "UNSEEN"
+            ));
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // 5
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "C++",
+                    "Imperative, Object-Oriented, Procedural",
+                    "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or \"C with Classes\".",
+                    "UNSEEN"
+            ));
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // 6
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "Python",
+                    "Imperative, Functional, Procedural, Object-Oriented",
+                    "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.",
+                    "UNSEEN"
+            ));
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
+
+        // 7
+        try {
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+            boolean success = dataBaseHelper.addLanguage(new Languages(
+                    -1,
+                    "CSS",
+                    "StyleSheet",
+                    "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.",
+                    "UNSEEN"
             ));
 //            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
 

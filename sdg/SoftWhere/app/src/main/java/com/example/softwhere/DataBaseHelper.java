@@ -195,15 +195,19 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     }
 
     public ArrayList<Languages> getAllLanguages(String searchQuery, String statusQuery) {
+        // ===================================================================================
         searchQuery = "%" + searchQuery + "%";
         searchQuery = "'" + searchQuery + "'";
+
+        statusQuery = "%" + statusQuery + "%";
         statusQuery = "'" + statusQuery + "'";
+        // ===================================================================================
 
         ArrayList<Languages> languages = new ArrayList<>();
 
         String queryString = "SELECT * FROM " + LANGUAGES_TABLE +
                 " WHERE " + LANGUAGES_COLUMN_TITLE + " LIKE " + searchQuery + " AND " +
-                LANGUAGES_COLUMN_STATUS + " = " + statusQuery + ";";
+                LANGUAGES_COLUMN_STATUS + " LIKE " + statusQuery + ";";
 
         SQLiteDatabase db = this.getReadableDatabase();
 
