@@ -7,6 +7,7 @@ public class Languages {
     private String type;
     private String description;
     private String status;
+    private String color = "#000000";
 
     public Languages(int id, String title, String type, String description, String status) {
         this.id = id;
@@ -54,6 +55,10 @@ public class Languages {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getLanguageColor() {
+        return color;
     }
 
     @Override

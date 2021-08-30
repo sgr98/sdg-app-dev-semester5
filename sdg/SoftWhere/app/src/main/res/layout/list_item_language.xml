@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="12dp"
     android:layout_marginEnd="12dp"
-    android:layout_marginBottom="26dp"
+    android:layout_marginBottom="36dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp"
     app:layout_constraintEnd_toEndOf="parent"
@@ -17,7 +17,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardViewLanguageItemConstraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline5"
@@ -35,11 +35,26 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
+                android:id="@+id/textViewLanguageStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="TextView"
+                android:textColor="@color/BlackText"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
                 android:id="@+id/textViewLanguageCardTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center"
                 android:text="TextView"
@@ -48,13 +63,14 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewLanguageStatus" />
 
             <TextView
                 android:id="@+id/tvLanguageType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/type"
                 android:textColor="@color/BlackText"
@@ -62,7 +78,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewLanguageCardTitle"
-                app:layout_constraintVertical_bias="0.3" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textViewLanguageType"
@@ -88,6 +104,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvLanguageType"
+                app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -137,43 +154,56 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/guideline5"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/textViewLanguageStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="TextView"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <RadioGroup
                 android:id="@+id/radioGroupLanguage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewLanguageStatus">
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/radioButtonLanguageUnseen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
 
                 <RadioButton
                     android:id="@+id/radioButtonLanguageStarted"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp" />
+                    android:layout_marginTop="4dp" />
 
                 <RadioButton
                     android:id="@+id/radioButtonLanguageCompleted"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="4dp" />
+
             </RadioGroup>
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnLanguageUpdate"-->
+            <!--                android:layout_width="60dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:text="@string/update"-->
+            <!--                android:textSize="8sp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/radioGroupLanguage"-->
+            <!--                app:layout_constraintVertical_bias="1.0" />-->
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                     "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
                     "UNSEEN"
             ));
-            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Operation is " + success, Toast.LENGTH_SHORT).show();
 
         } catch (Exception e) {
             Toast.makeText(this, "Error uploading data", Toast.LENGTH_SHORT).show();

@@ -83,7 +83,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:src="@mipmap/ic_solid_icon"
+                        android:src="@mipmap/ic_pl"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -133,7 +133,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:src="@mipmap/ic_solid_icon"
+                        android:src="@mipmap/ic_info"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -184,7 +184,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:src="@mipmap/ic_solid_icon"
+                        android:src="@mipmap/ic_job"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />

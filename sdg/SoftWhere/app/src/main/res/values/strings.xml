@@ -15,4 +15,13 @@
     <string name="visit">Visit The Website</string>
     <string name="job_title">Job Title</string>
     <string name="type">Type:</string>
+    <string name="update">Update</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string-array name="filter_items">
+        <item>All</item>
+        <item>Unseen</item>
+        <item>Start</item>
+        <item>Completed</item>
+    </string-array>
 </resources>

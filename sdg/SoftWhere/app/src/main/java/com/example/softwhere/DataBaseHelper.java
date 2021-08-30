@@ -189,9 +189,21 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         Cursor cursor = db.rawQuery(queryString, null);
         if(cursor.moveToFirst())
-            return true;
+            return false;
+        return true;
+    }
 
-        return false;
+    public boolean updateLanguageStatus(int id, String status) {
+        status = "'" + status + "'";
+        SQLiteDatabase db = this.getWritableDatabase();
+        String queryString = "UPDATE " + LANGUAGES_TABLE + " SET " +
+                LANGUAGES_COLUMN_STATUS + " = " + status +
+                " WHERE " + LANGUAGES_COLUMN_ID + " = " + id + ";";
+
+        Cursor cursor = db.rawQuery(queryString, null);
+        if(cursor.moveToFirst())
+            return false;
+        return true;
     }
 
     public ArrayList<Languages> getAllLanguages(String searchQuery, String statusQuery) {
@@ -219,6 +231,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 String type = cursor.getString(2);
                 String description = cursor.getString(3);
                 String status = cursor.getString(4);
+
+                String color = "#000000";
+                if(status == "UNSEEN")
+                    color = "#F7F6F2";
+                else if(status == "START")
+                    color = "#FFF7AE";
+                else if(status == "COMPLETED")
+                    color = "#80ED99";
 
                 languages.add(new Languages(id, title, type, description, status));
             } while(cursor.moveToNext());

@@ -12,6 +12,8 @@
     <color name="DarkBlueBackground">#2D46B9</color>
     <color name="DescriptionTextBlack">#484848</color>
     <color name="DarkGreenBackground">#158467</color>
-<!--    <color name=""></color>-->
-<!--    <color name=""></color>-->
+    <color name="LanguageRadioGrey">#F7F6F2</color>
+    <color name="LanguageRadioYellow">#FFF7AE</color>
+    <color name="LanguageRadioGreen">#80ED99</color>
+    <color name="LanguageTitleBackground">#35477D</color>
 </resources>
