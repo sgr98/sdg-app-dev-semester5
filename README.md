@@ -21,16 +21,72 @@ commitment. For this reason, this section contains various job offerenings colle
 qualifications and avarage offered salary. The monetary incentives provided to Software Developers are usually much higher than most other jobs and this should be 
 able to provide some incentive other that self's passion to the user.
 
+The size of this app is around 4.64MB.
+
 ## Prerequisites
 
+* The version 1.0 requires a minimum API Level of 26 (Android Oreo) to run this app.
+* The build gradle(app) for this app is:
+ 
+ ```
+ apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.softwhere"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+}
+ ``` 
+ * The extra dependcies as mentioned above are [Glide](https://github.com/bumptech/glide) and [Gson](https://github.com/google/gson).
+ * Other than google() and jcenter(), one extra repository is used called mavencentral() which is used to integrate Glide into the project.
 
 ## Installation
 
+1. Download this [.apk file](https://drive.google.com/file/d/14eXM19CXHwr3lFwGQziVu8wO4VkuBRvV/view?usp=sharing) from my google drive folder (Only people from 'Indian institute of Technology Tirupati' mailing list can access this file). Preferrable to download this in your personal computer.
+2. 
 
 ## Contact
 
 Sagar Singh  
 cs19b038@iittp.ac.in
+Indian Institute of Technology, Tirupati.
 
 ## P.S.
 The main aim for this project was to provide affordable techinal education. In order to achieve this, the application is **free of charge**. During the early stages, 
