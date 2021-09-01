@@ -69,6 +69,8 @@ dependencies {
 
 ## Installation
 
+> NOTE: For better viewing experience, please open the README file in a markdown editor or VSCode.
+
 1. Download this [.apk file](https://drive.google.com/file/d/14eXM19CXHwr3lFwGQziVu8wO4VkuBRvV/view?usp=sharing) from my google drive folder (Only people from 'Indian institute of Technology Tirupati' mailing list can access this file). Preferrable to download this in your personal computer.
 
 2. Click on the "Download" button when the link opens up. When the "Open with" Dialog box pops up, Click "Chrome" or any browser of your liking.
