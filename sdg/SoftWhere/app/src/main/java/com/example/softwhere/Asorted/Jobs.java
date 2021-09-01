@@ -1,5 +1,8 @@
 package com.example.softwhere.Asorted;
 
+/*
+Jobs is used as a data structure for JobDetailsActivity.
+ */
 public class Jobs {
 
     private int id;

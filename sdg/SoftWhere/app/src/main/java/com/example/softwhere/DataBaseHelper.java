@@ -14,6 +14,11 @@ import com.example.softwhere.Asorted.ShortJob;
 
 import java.util.ArrayList;
 
+/*
+DataBaseHelper constructs a softwhere_details.db and creates two tables: JOB_DETAILS_TABLE and LANGUAGES_TABLE
+which is used in JobsActivity and LanguageActivity respectively. It also implements APIs so that other
+activities can access the database.
+ */
 public class DataBaseHelper extends SQLiteOpenHelper {
 
     public static final String JOB_DETAILS_TABLE = "job_details";
@@ -70,6 +75,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     // JOB QUERIES
     // =============================================
 
+    /*
+    Add a row to JOB_DETAILS_TABLE
+     */
     public boolean addJob(Jobs job) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -87,6 +95,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    /*
+    Delete a row from JOB_DETAILS_TABLE with row_id = id
+     */
     public boolean deleteOneJob(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + JOB_DETAILS_TABLE + " WHERE " + JOB_COLUMN_ID + " = " + id + ";";
@@ -98,6 +109,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    /*
+    Get all the rows of JOB_DETAILS_TABLE.
+     */
     public ArrayList<ShortJob> getAllCardJobs() {
         ArrayList<ShortJob> shortJobs = new ArrayList<>();
 
@@ -133,6 +147,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return shortJobs;
     }
 
+    /*
+    Get a specific row of JOB_DETAILS_TABLE with row_id = id
+     */
     public Jobs getJobById(int id) {
         Jobs job;
 
@@ -167,6 +184,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     // LANGUAGE QUERIES
     // =============================================
 
+    /*
+    Add a row to LANGUAGES_TABLE
+     */
     public boolean addLanguage(Languages language) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -183,6 +203,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
+    /*
+    Delete a row from LANGUAGES_TABLE with row_id = id
+     */
     public boolean deleteOneLanguage(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
         String queryString = "DELETE FROM " + LANGUAGES_TABLE + " WHERE " + LANGUAGES_COLUMN_ID + " = " + id + ";";
@@ -193,6 +216,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    /*
+    Update status column of the LANGUAGES_TABLE with row_id = id
+     */
     public boolean updateLanguageStatus(int id, String status) {
         status = "'" + status + "'";
         SQLiteDatabase db = this.getWritableDatabase();
@@ -206,6 +232,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    /*
+    Get all the rows of LANGUAGES_TABLE with title column containing searchQuery and status column
+    containing statusQuery.
+     */
     public ArrayList<Languages> getAllLanguages(String searchQuery, String statusQuery) {
         // ===================================================================================
         searchQuery = "%" + searchQuery + "%";

@@ -1,5 +1,8 @@
 package com.example.softwhere.Asorted;
 
+/*
+Languages is used as a data structure for LanguagesRecylerViewAdapter.
+ */
 public class Languages {
 
     private int id;

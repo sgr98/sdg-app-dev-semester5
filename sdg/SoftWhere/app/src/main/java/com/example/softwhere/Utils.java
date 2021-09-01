@@ -9,6 +9,9 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+/*
+Used in order to initialise the database only once and not every time the app is loaded
+ */
 public class Utils {
 
     private static Utils instance;

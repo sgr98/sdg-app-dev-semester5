@@ -15,6 +15,9 @@ import com.example.softwhere.Asorted.Jobs;
 import com.example.softwhere.DataBaseHelper;
 import com.example.softwhere.R;
 
+/*
+JobDetailsActivity provides complete description of that particular job.
+ */
 public class JobDetailsActivity extends AppCompatActivity {
 
     public static final String JobDetailId = "jobDetailId";
@@ -63,6 +66,9 @@ public class JobDetailsActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    Initiating the required layout components of activity_job_details.
+     */
     private void initData() {
         imgJobDetail = findViewById(R.id.imgJobDetailsMain);
         textViewJobDetailMainTitle = findViewById(R.id.textViewJobDetailMainTitle);

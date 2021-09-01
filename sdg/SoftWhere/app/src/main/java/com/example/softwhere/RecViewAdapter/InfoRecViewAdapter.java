@@ -24,7 +24,9 @@ import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_C
 import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_DESCRIPTION_KEY;
 import static com.example.softwhere.InnerViews.InfoDetailsActivity.INFO_DETAIL_TITLE_KEY;
 
-
+/*
+InfoRecViewAdapter creates a adapter for the InfoRecyclerView and accepts Infos array list.
+ */
 public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.InfoViewHolder> {
 
     private ArrayList<Infos> infos = new ArrayList<>();
@@ -69,11 +71,17 @@ public class InfoRecViewAdapter extends RecyclerView.Adapter<InfoRecViewAdapter.
         return infos.size();
     }
 
+    /*
+    Set Infos array list as the array list for InfosRecViewAdapter.
+     */
     public void setInfos(ArrayList<Infos> infos) {
         this.infos = infos;
         notifyDataSetChanged();
     }
 
+    /*
+    Creates a ViewHolder for the super class.
+     */
     public class InfoViewHolder extends RecyclerView.ViewHolder {
 
         private CardView parentCardViewInfoItem;

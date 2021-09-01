@@ -62,12 +62,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*
+    Initiating the required layout components of activity_main
+     */
     private void initData() {
         cardViewHomePL = findViewById(R.id.cardViewHomePL);
         cardViewHomeInfo = findViewById(R.id.cardViewHomeInfo);
         cardViewHomeJobs = findViewById(R.id.cardViewHomeJobs);
     }
 
+    /*
+    Initialising the local database with required values.
+    Two tables are present: JOB_DETAILS_TABLE and LANGUAGES_TABLE.
+     */
     private void initialiseDatabase() {
         // 1
         try {

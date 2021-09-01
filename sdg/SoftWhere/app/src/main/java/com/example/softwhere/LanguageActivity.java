@@ -76,6 +76,11 @@ public class LanguageActivity extends AppCompatActivity {
 //        });
     }
 
+    /*
+    Initialising the Languages array list and deciding its contents based on the searchText and statusText.
+    Setting up the adapter with the array list.
+    Setting the recycler view with the adapter.
+     */
     private void initialiseAdapterAndActivity(String search, String status) {
         ArrayList<Languages> languages = new ArrayList<>();
         recyclerView.setVisibility(View.VISIBLE);

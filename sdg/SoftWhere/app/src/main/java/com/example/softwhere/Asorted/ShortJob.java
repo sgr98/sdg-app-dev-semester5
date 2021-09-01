@@ -1,5 +1,8 @@
 package com.example.softwhere.Asorted;
 
+/*
+ShortJob is used as a data structure for JobsRecylerViewAdapter.
+ */
 public class ShortJob {
 
     private int id;

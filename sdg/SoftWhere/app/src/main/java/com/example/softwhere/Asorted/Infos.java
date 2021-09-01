@@ -1,5 +1,8 @@
 package com.example.softwhere.Asorted;
 
+/*
+Infos is used as a data structure for InfoRecylerViewAdapter and InfoDetailsActivity.
+ */
 public class Infos {
 
     private int id;

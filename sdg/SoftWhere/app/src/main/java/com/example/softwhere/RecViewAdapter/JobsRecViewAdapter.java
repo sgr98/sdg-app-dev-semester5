@@ -25,6 +25,9 @@ import java.util.ArrayList;
 
 import static com.example.softwhere.InnerViews.JobDetailsActivity.JobDetailId;
 
+/*
+JobsRecViewAdapter creates a adapter for the JobsRecyclerView and accepts ShortJobs array list.
+ */
 public class JobsRecViewAdapter extends RecyclerView.Adapter<JobsRecViewAdapter.JobsViewHolder>{
 
     private ArrayList<ShortJob> shortJobs = new ArrayList<>();
@@ -78,11 +81,17 @@ public class JobsRecViewAdapter extends RecyclerView.Adapter<JobsRecViewAdapter.
         return shortJobs.size();
     }
 
+    /*
+    Set ShortJobs array list as the array list for ShortJobsRecViewAdapter.
+     */
     public void setShortJobs(ArrayList<ShortJob> shortJobs) {
         this.shortJobs = shortJobs;
         notifyDataSetChanged();
     }
 
+    /*
+    Creates a ViewHolder for the super class.
+     */
     public class JobsViewHolder extends RecyclerView.ViewHolder {
 
         private CardView parentCardViewJobsItem;

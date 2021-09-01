@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import com.example.softwhere.R;
 
+/*
+InfoDetailsActivity provides complete description of that particular info.
+ */
 public class InfoDetailsActivity extends AppCompatActivity {
 
     public static final String INFO_DETAIL_TITLE_KEY = "infoTitle";

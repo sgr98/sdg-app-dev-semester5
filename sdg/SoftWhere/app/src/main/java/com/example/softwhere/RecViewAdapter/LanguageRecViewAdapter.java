@@ -22,6 +22,9 @@ import com.example.softwhere.R;
 
 import java.util.ArrayList;
 
+/*
+LanguageRecViewAdapter creates a adapter for the LanguageRecyclerView and accepts Languages array list.
+ */
 public class LanguageRecViewAdapter extends RecyclerView.Adapter<LanguageRecViewAdapter.LanguageViewHolder> {
 
     private ArrayList<Languages> languages = new ArrayList<>();
@@ -107,11 +110,17 @@ public class LanguageRecViewAdapter extends RecyclerView.Adapter<LanguageRecView
         return languages.size();
     }
 
+    /*
+    Set Languages array list as the array list for LanguagesRecViewAdapter.
+     */
     public void setLanguages(ArrayList<Languages> languages) {
         this.languages = languages;
         notifyDataSetChanged();
     }
 
+    /*
+    Creates a ViewHolder for the super class.
+     */
     public class LanguageViewHolder extends RecyclerView.ViewHolder {
 
         private CardView parentCardViewLanguageItem;
