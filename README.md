@@ -5,21 +5,11 @@
 SoftWhere is an android application designed for beginers and aspirants that wish to pursue a career in **Software Development.**   
 
 It contains three sets of features:  
-**1. Programming language progress tracker-** Programming Languages are the foundations of Software Development. This section provides the user with a list of 
-programming languages along with its description. At first, all the languages would be *"UNSEEN"* by the user. Three radio buttons are provided beside the language. 
-First one would mark the language as *UNSEEN* with a grey background, second one would mark the language as *START* with a yellow background and the third one would 
-mark the language as *COMPLETED* with a green background. The section also has a search bar for search programming languages by title.  
+**1. Programming language progress tracker-** Programming Languages are the foundations of Software Development. This section provides the user with a list of programming languages along with its description. At first, all the languages would be *"UNSEEN"* by the user. Three radio buttons are provided beside the language. First one would mark the language as *UNSEEN* with a grey background, second one would mark the language as *START* with a yellow background and the third one would mark the language as *COMPLETED* with a green background. The section also has a search bar for search programming languages by title.  
 
-**2. Information Bank-** "Information is only useful when it can be understood". This sections contains various cards containing description about the various 
-sub-disciplines of Software Development such as Web Development, frontend, backend, full stack. The information will be consolidated in such a such that a beginer 
-in programming would be able to understand it but will also provide essential keywords necessary for learning that topic. An alternative purpose of this section is 
-to remove misconceptions regarding these sub-disciplines that might exist due to reasons such as over-popularity.  
+**2. Information Bank-** "Information is only useful when it can be understood". This sections contains various cards containing description about the various sub-disciplines of Software Development such as Web Development, frontend, backend, full stack. The information will be consolidated in such a such that a beginer in programming would be able to understand it but will also provide essential keywords necessary for learning that topic. An alternative purpose of this section is to remove misconceptions regarding these sub-disciplines that might exist due to reasons such as over-popularity.  
 
-**3. 'Various Jobs' section-** Incentives are an essential part of learning when one commits months of his/her time into learning that thing. In the case of Software 
-Development where one has to not only tackle numerous open-ended problems, but also come up with creative solutions, strong incentives become an essential factor in 
-commitment. For this reason, this section contains various job offerenings collected from various websites such as linkeIn, indeed, etc, along with its description, 
-qualifications and avarage offered salary. The monetary incentives provided to Software Developers are usually much higher than most other jobs and this should be 
-able to provide some incentive other that self's passion to the user.
+**3. 'Various Jobs' section-** Incentives are an essential part of learning when one commits months of his/her time into learning that thing. In the case of Software Development where one has to not only tackle numerous open-ended problems, but also come up with creative solutions, strong incentives become an essential factor in commitment. For this reason, this section contains various job offerenings collected from various websites such as linkeIn, indeed, etc, along with its description, qualifications and avarage offered salary. The monetary incentives provided to Software Developers are usually much higher than most other jobs and this should be able to provide some incentive other that self's passion to the user.
 
 The size of this app is around 4.64MB.
 
@@ -80,7 +70,77 @@ dependencies {
 ## Installation
 
 1. Download this [.apk file](https://drive.google.com/file/d/14eXM19CXHwr3lFwGQziVu8wO4VkuBRvV/view?usp=sharing) from my google drive folder (Only people from 'Indian institute of Technology Tirupati' mailing list can access this file). Preferrable to download this in your personal computer.
-2. 
+
+2. Click on the "Download" button when the link opens up. When the "Open with" Dialog box pops up, Click "Chrome" or any browser of your liking.
+
+<img title="Install 1" 
+alt="Installation Step 1" 
+src="Resources/Installation/install1.jpg" 
+style="height: 350px; width:auto;" />
+<img title="Install 2" 
+alt="Installation Step 2" 
+src="Resources/Installation/install2.jpg" 
+style="height: 350px; width:auto;" />
+
+3. When this widow pops up. Click on "Download Anyway".
+
+<img title="Install 3" 
+alt="Installation Step 3" 
+src="Resources/Installation/install3.jpg" 
+style="height: auto; width:450px;" />
+
+4. A new dialog box will appear. Click on "OK".
+
+<img title="Install 4" 
+alt="Installation Step 4" 
+src="Resources/Installation/install4.jpg" 
+style="height: auto; width:450px;" />
+
+5. Now open the Files application present in your smartphone and go to the "Downloads" section. You should be able to see the "app-debug.apk" file present there.
+
+<img title="Install 5" 
+alt="Installation Step 5" 
+src="Resources/Installation/install5.jpg" 
+style="height: 350px; width:auto;" />
+<img title="Install 6" 
+alt="Installation Step 6" 
+src="Resources/Installation/install6.jpg" 
+style="height: 350px; width:auto;" />
+
+6. Tap the apk file to initiate the installation process.
+
+<img title="Install 7" 
+alt="Installation Step 7" 
+src="Resources/Installation/install7.jpg" 
+style="height: auto; width:350px;" />
+
+7. If the below window (INSTALL UNKNOWN APPS) opens up then please enable "Allow from this source" and then go back.
+
+<img title="Install 8" 
+alt="Installation Step 8" 
+src="Resources/Installation/install8.jpeg" 
+style="height: auto; width:350px;" />
+
+8. Then a new pop up will appear "Blocked by Play Protect". Please click on "Install anyway". Then the installtion process will begin.
+
+<img title="Install 9" 
+alt="Installation Step 9" 
+src="Resources/Installation/install9.jpg" 
+style="height: auto; width:350px;" />
+
+9. After the app is installed please click on done.
+
+<img title="Install 10" 
+alt="Installation Step 10" 
+src="Resources/Installation/install10.jpg" 
+style="height: auto; width:350px;" />
+
+10. When you open the app, a final pop up will appear. Please click on "Don't Send"
+
+<img title="Install 11" 
+alt="Installation Step 11" 
+src="Resources/Installation/install11.jpg" 
+style="height: auto; width:350px;" />
 
 ## Contact
 
