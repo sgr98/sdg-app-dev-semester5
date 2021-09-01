@@ -12,7 +12,10 @@
 12) https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.htmlhttps://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html
 13) https://www.udacity.com/blog/2020/12/front-end-vs-back-end-vs-full-stack-web-developers.html#:~:text=The%20back%2D%20end%20of%20a,exist%20in%20the%20first%20place.
 14) https://www.sam-solutions.com/blog/cross-platform-mobile-development/
-
+15) https://as1.ftcdn.net/jpg/02/57/42/72/500_F_257427286_Lp7c9XdPnvN46TyFKqUaZpPADJ77ZzUk.jpg
+16) https://resources.workable.com/wp-content/uploads/2017/02/how-to-post-jobs-indeed-featured.png
+17) https://bsmedia.business-standard.com/_media/bs/img/about-page/1562577931.jpg
+18) wikipedia
 
 [
 + "\n\n"
@@ -24,20 +27,3 @@
                         + "\n\n"
                         + "PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. PlaceHolderText. "
 ]
-
-
-15) https://as1.ftcdn.net/jpg/02/57/42/72/500_F_257427286_Lp7c9XdPnvN46TyFKqUaZpPADJ77ZzUk.jpg
-16) https://resources.workable.com/wp-content/uploads/2017/02/how-to-post-jobs-indeed-featured.png
-17) https://bsmedia.business-standard.com/_media/bs/img/about-page/1562577931.jpg
-18) wikipedia
-19) 
-20) 
-21) 
-22) 
-23) 
-24) 
-25) 
-26) 
-27) 
-28) 
-29) 
