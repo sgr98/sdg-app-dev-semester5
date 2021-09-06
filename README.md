@@ -11,6 +11,11 @@ It contains three sets of features:
 
 **3. 'Various Jobs' section -** Incentives are an essential part of learning for people who invests their time to learn particular skills. In the case of Software Development where one has to not only tackle numerous open-ended problems, but also come up with creative solutions, strong incentives become an essential factor in one's commitment. For this reason, this section contains job offerenings collected from various websites such as **LinkedIn**, **Indeed**, etc. The monetary incentives provided to Software Developers are usually much higher than most other jobs and this should be able to provide sufficient incentive other that self's passion of the user.
 
+## Video Presentation
+
+The video presentation for the android application is given below.  
+[Video Link](https://drive.google.com/file/d/1PouKNC8oEyHB-nJJYtEK8iwr3fYZdaSf/view?usp=sharing)
+
 ## Prerequisites
 
 * The version 1.0 requires a minimum API Level of 26 (Android Oreo) to run this app.
